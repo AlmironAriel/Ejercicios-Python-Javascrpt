@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let num1 = parseInt(prompt("Ingrese el primer numero: "));
+        let num2 = parseInt(prompt("Ingrese el segundo numero: "));
+        
+        if (num1 % 1 === 0 && num2 % 1 === 0){
+            operacion = prompt("Ingrese 1=Suma, 2=Multiplicación, 3=Diferencia");
+
+        if (operacion == 1){
+            alert(`la suma de los numeros ingresados es: ${num1 + num2}.`);
+        } else if (operacion == 2){
+            alert(`la multiplicación de los numeros ingresados es: ${num1 * num2}.`);
+        } else{
+            alert(`la diferencia de los numeros ingresados es: ${num1 - num2}.`);
+
+        }
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

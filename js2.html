@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios JavaScript</title>
+    <script>
+        let caramelos = prompt("Ingrese el numero de caramelos: ");
+        let ninios = prompt("Ingrese la cantidad de niños: ");
+        caramelos = parseInt(caramelos)
+        ninios = parseInt(ninios)
+
+        document.write(`Los niiños recibieron ${caramelos / ninios} caramelos.`);
+
+        if (caramelos % ninios == 0){
+            document.write("Todos los niños recibieron la misma cantidad de caramelos.");
+        } else{
+            document.write("Los niños no recibieron la misma cantidad de caramelos.")
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

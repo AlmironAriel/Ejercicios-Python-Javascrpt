@@ -2,8 +2,6 @@
 y determinar si el primer digito es multiplo de los otros dos"""
 
 import math
-"""Construir un algoritmo que permita leer un numero entero de tres cifras
-y determinar si el primer digito es ultiplo de los otros dos"""
 
 num = int(input('Ingrese un numero de tres digitos: '))
 

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let caramelos = parseInt(prompt("Ingrese el numero de caramelo: "));
+        let ninios = parseInt(prompt("Ingrese el numero de ninios: "));
+
+        if (caramelos > 0){
+            document.write(`Cada ninios recibió ${caramelos / ninios} caramelos. <br>`);
+            if(caramelos % ninios == 0){
+                document.write("Cada niño recibió la misma cantidad de caramelos")
+            }
+        } else{
+            document.write("No se registró caramelos para repartir")
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
