@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let numero = prompt("Ingrese un número entero: ");
+        numero = parseInt(numero);
+
+        if(numero % 1 === 0){
+            if (!isNaN(numero) && numero % 2 === 0){ //Si un numero es entero(que no tenga partes decimales)
+                alert(`El número ${numero} es par`);
+            } else{
+                alert(`El número ${numero} es impar.`)
+            }
+        } else{
+            alert("por favor ingrese un número entero!");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

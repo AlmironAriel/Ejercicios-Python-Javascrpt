@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let numero = prompt("Ingrese un número entero de tres cifras: ");
+
+        if (numero % 1 === 0 && numero > 99 && numero < 1000){
+            digito1 = numero.charAt(0);
+            digito2 = numero.charAt(1);
+            digito3 = numero.charAt(2);
+            digito1 = parseInt(digito1);
+            digito2 = parseInt(digito2);
+            digito3 = parseInt(digito3);
+
+            if(digito1 % digito2 === 0 && digito1 % digito3 === 0){
+                alert(`${digito1} es multiplo de ${digito2} y de ${digito3}`);
+            } else{
+                alert(`${digito1} no es multiplo de ${digito2} y de ${digito3}`);
+            }
+        } else{
+            alert("Ingrese un número entero de tres cifras")
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

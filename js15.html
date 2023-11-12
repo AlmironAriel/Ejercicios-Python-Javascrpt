@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let numero = prompt("Ingrese un numero entero de dos dígitos: ");
+
+        if (numero % 1 === 0 && numero > 9 && numero < 100){
+            let digito1 = numero.charAt(0);
+            let digito2 = numero.charAt(1);
+
+            if(digito1 == digito2){
+                alert(`Ambos dígitos del número son iguales.`);
+            } else{
+                alert(`Los dígitos del número no son iguales`);
+            }
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
