@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let a = parseInt(prompt("Ingrese la calificación del alumno: "));
+        let b = parseInt(prompt("Ingrese la calificación del alumno: "));
+        let c = parseInt(prompt("Ingrese la calificación del alumno: "));
+        let d = parseInt(prompt("Ingrese la calificación del alumno: "));
+
+        if(a < b && a < c && a < c){
+            let menor = a;
+        } else if(b < a && b < c && b < d){
+            menor = b;
+        } else if(c < a && c < b && c < d){
+            menor = c;
+        } else if(d < a && d < b && d < c){
+            menor = d;
+        };
+
+        let promedio = Math.floor(((((a + b )+ c)+ d)- menor)/ 3);
+        
+        alert(`El promedio de las tres majores notas es ${promedio}`);
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

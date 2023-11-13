@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let eje_x = parseInt(prompt('Ingresa un valor para el eje X: '));
+        let eje_y = parseInt(prompt('Ingresa un valor para el eje Y: '));
+
+        if (eje_x > 0 && eje_y > 0){
+            alert(`El punto ${eje_x} : ${eje_y} pertenece al Primer Cuadrante`);
+        } else if (eje_x < 0 && eje_y > 0){
+            alert(`El punto ${eje_x} : ${eje_y} pertenece al Segundo Cuadrant`);
+        } else if (eje_x < 0 && eje_y < 0){
+            alert(`El punto ${eje_x} : ${eje_y} pertenece al Tercer Cuadrante`);
+        } else{
+            alert(`El punto ${eje_x} : ${eje_y} pertenece al Cuarto Cuadrante`);
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

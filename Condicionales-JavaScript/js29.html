@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let cantComprada = parseInt(prompt("Ingrese la cantidad comprada: "));
+        let bonificacion = 0;
+
+        if(cantComprada <= 1000){
+            bonificacion = (cantComprada + 5);
+        } else if(cantComprada > 1000 && cantComprada < 1501){
+            bonificacion = (cantComprada * 1.2);
+        } else if(cantComprada > 1500 && cantComprada <= 2000){
+            bonificacion = (cantComprada * 1.3);
+        } else if (cantComprada > 2000){
+            bonificacion = (cantComprada + 100)
+        };
+        bonificacion = parseInt(bonificacion)
+        alert(`El comprador recibirá ${bonificacion} unidades.`);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
