@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        let libArg = parseInt(prompt("Libros argentinos: "));
+        let libLat = parseInt(prompt("Libros latinoamericanos: "));
+        let libEuro = parseInt(prompt("Libros europeos: "));
+        let libAsia = parseInt(prompt("Libros asiaticos: "));
+        let nivel = ""
+
+        let libTotal = (((libArg + libLat)+ libEuro)+ libAsia);
+        
+        let porcLibArg = Math.floor(((libArg * 100) / libTotal));
+        let porcLibLat = Math.floor(((libLat * 100) / libTotal));
+        let porcLibEuro = Math.floor(((libEuro * 100) / libTotal));
+        let porcLibAsia = Math.floor(((libAsia * 100) / libTotal));
+
+        if(libTotal < 5000){
+            nivel = "MALO";
+        } else if(libTotal < 10000){
+            nivel = "BUENO";
+        } else if(libTotal < 20000){
+            nivel = "MUY BUENO";
+        } else if(libTotal < 30000){
+            nivel = "EXELENTE";
+        } else if(libTotal < 40000);{
+            nivel = "SOBRESALIENTE";
+        };
+
+        alert(`La cantidad total de libros en la exposición es de ${libTotal} libros.`);
+        alert(`Libros argentinos: ${porcLibArg}% 
+        \nLibros latinoamericanos: ${porcLibLat}% 
+        \nLibros europeos: ${porcLibEuro}% 
+        \nLibros asiaticos: ${porcLibAsia}%`)
+        alert(`El nivel de exposición es ${nivel}`);
+
+    </script>
+</head>
+
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        n = parseInt(prompt("Ingrese un número entero positívo de un dígito: "));
+        if (n % 1 === 0 && n > -1 && n < 10){
+            if(n == 1 || n == 2 || n == 3 || n == 5 || n == 7){ // la barra || significa o (condicion 1 o condicion 2)
+                alert(`El número ${n} es un número primo.`);
+            } else{
+                alert(`El número ${n} no es un número primo!`)
+            }
+        } else{
+            alert("Ingrese un número entero positívo de un dígito!")
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let a = parseInt(prompt('Ingrese la medida del primer lado del angulo: '));
+        let b = parseInt(prompt('Ingrese la medida del segundo lado del angulo: '));
+        let c = parseInt(prompt('Ingrese la medida del tercer lado del angulo: '));
+
+        if (a >= (b + c)){
+           alert('Las medidas de los lados no forman un triangulo');
+        } else if (a**2 == (b**2 + c**2)){
+           alert('Los lados forman un triangulo rectangulo');
+        }else if (a**2 > (b**2 + c**2)){
+           alert('Los lados forman un triangulo obtuso');
+        }else if (a**2 < b**2 + c**2){
+           alert('Los lados forman un rectangulo agudo');
+        }else if (a**2 == b**2 && a**2 == c**2){
+           alert('Los lados forman un rectangulo equilatero');
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

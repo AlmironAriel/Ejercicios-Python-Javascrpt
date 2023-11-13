@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        ventas = parseInt(prompt("Ingrese las ventas totales: "));
+
+        if(ventas > 0 && ventas <= 5000){
+            alert("El vendedor no tiene comisión");
+        } else if(ventas > 5000 && ventas <= 10000){
+            let comision = Math.floor(((ventas * 8) / 100));
+            alert(`La comisión de ventas del empleado es de ${comision} pesos.`)
+        } else if(ventas > 10000){
+            comision = Math.floor((((ventas - 10000)* 5) / 100)+ 800);
+            alert(`La comision del empleado es de ${comision} pesos.`)
+        };
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
