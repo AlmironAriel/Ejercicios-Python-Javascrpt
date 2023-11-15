@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let cantTotal = 0; // cantidad total de números ingresados
+        let contNumNeg = 0; // contador de números negativos
+        let sumaNegativos = 0;
+        let contNumPos = 0; // contador de números positivos
+        let sumaPositivos = 0;
+        let primero = true;
+        let menor, mayor;
+
+        let corte = parseInt(prompt("Desea Iniciar? 1=SI 0=NO: "));
+        while (corte === 1) {
+            let num = parseInt(prompt("Ingrese un número: "));
+            // mayores y menores
+            if (primero) {
+                menor = num;
+                mayor = num;
+                primero = false;
+            } else {
+                if (num < menor) {
+                    menor = num;
+                }
+                if (num > mayor) {
+                    mayor = num;
+                }
+            }
+            // contador de números negativos y positivos
+            if (num > 0) {
+                contNumPos++;
+                sumaPositivos += num;
+            } else {
+                contNumNeg++;
+                sumaNegativos += num;
+            }
+            cantTotal++;
+            corte = parseInt(prompt("Desea continuar?: 1=SI 0=NO: "));
+        }
+
+        // Contadores
+        document.write(`Se ingresaron: ${cantTotal} números. <br>`);
+        document.write(`Cantidad de números positivos ingresados: ${contNumPos} <br>`);
+        document.write(`Cantidad de números negativos ingresados: ${contNumNeg} <br>`);
+        // promedios
+        document.write(`El promedio de los números positivos es: ${Math.floor(sumaPositivos / contNumPos)} <br>`);
+        document.write(`El promedio de los números negativos es: ${Math.floor(sumaNegativos / contNumNeg)} <br>`);
+        // mayor y menor
+        document.write(`El número mayor es: ${mayor} <br>`);
+        document.write(`El número menor es: ${menor} <br>`);
+
+  
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let a = parseInt(prompt('Ingresa la medida del lado  A del triangulo: '))
+        let b = parseInt(prompt('Ingresa la medida del lado B del triangulo: '))
+        let c = parseInt(prompt('Ingresa la medida del lado C del triangulo: '))
+
+        if(a == b && b == c){
+            alert('El triangulo es equilatero');
+        }if (a == b || b == c || c == a){
+            alert('El triangulo es isosceles');
+        } else{
+            alert('El triangulo es escaleno');
+        };
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

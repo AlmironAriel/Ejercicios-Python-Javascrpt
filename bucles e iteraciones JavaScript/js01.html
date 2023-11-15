@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let num1 = parseInt(prompt("Ingrese un número entero: "));
+        let num2 = parseInt(prompt("Ingrese un número entero: "));
+
+        let cod = parseInt(prompt("Ingrese 1=SUMA, 2=MULTIPLICACION, 3=DIFERENCIA: "));
+
+        while (cod < 1 || cod > 3) {
+            alert("Por favor, ingrese un código de operación válido (1, 2, o 3).");
+            cod = parseInt(prompt("Ingrese 1=SUMA, 2=MULTIPLICACION, 3=DIFERENCIA: "));
+        }
+
+        // El bucle se ejecuta solo si el código de operación está en el rango correcto
+        if (cod === 1) {
+            alert(`La suma de ${num1} + ${num2} es: ${num1 + num2}`);
+        } else if (cod === 2) {
+            alert(`La multiplicación de ${num1} y ${num2} es: ${num1 * num2}`);
+        } else if (cod === 3) {
+            alert(`La diferencia de ${num1} y ${num2} es: ${num1 - num2}`);
+        };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

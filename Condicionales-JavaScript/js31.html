@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let num1 = parseInt(prompt("ingrese un número mayor a 0: "));
+        let num2 = parseInt(prompt("ingrese un número mayor a 0: "));
+        let num3 = parseInt(prompt("ingrese un número mayor a 0: "));
+        let multiplo = false;
+        let contPares = 0;
+
+        if (num1 > 0 && num2 > 0 && num3 > 0){
+            let multiplicacion = ((num1 * num2)* num3);
+
+            if(multiplicacion % 3 === 0){
+                multiplo = true;
+            }
+            if(num1 % 2 === 0){
+                contPares ++
+            }
+            if(num2 % 2 === 0){
+                contPares ++
+            }
+            if(num3 % 2 === 0){
+                contPares ++
+            }
+            if(multiplo == true){
+                alert(`El número ${multiplicacion} es multiplo de 3`)
+            } else{
+                alert(`El número ${multiplicacion} NO es multiplo de 3`)
+            }
+            alert(`se ingresaro ${contPares} números pares.`)
+        } else{
+            alert("Por favor ingrese un numero mayor a 0!")
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

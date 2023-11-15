@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let cuadrado
+        let corte = parseInt(prompt("¿Desea Iniciar? 1=SI 0=NO"));
+        while(corte === 1){
+            let num = parseInt(prompt("Ingrese un número entero: "));
+            if(num % 1 === 0){
+                cuadrado = num * num
+            } else{
+                alert("Ingrese un número entero")
+            }
+            document.write(`El cuadrado de ${num} es: ${cuadrado}. <br>`)
+            corte = parseInt(prompt("¿Desea Continuar? 1=SI 0=NO"));
+        };
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        corte = prompt("¿desea Iniciar? y / n: ");
+        a = parseInt(prompt("Ingrese el número para calcular sus múltiplos: "));
+        n = parseInt(prompt("Ingrese el número de veces que desea iterar: "));
+
+        while(corte == "y"){
+            for(i=0; i <= n; i++){
+                if(i % a === 0){
+                    alert(`El número ${i} es múltiplo de ${a}`);
+                }
+            }
+        corte = prompt("¿desea continuar? y / n: ");
+        }
+
+
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

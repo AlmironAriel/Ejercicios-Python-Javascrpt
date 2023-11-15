@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+       // Precio del producto
+        const precioProducto = 1.00;
+
+        // Solicitar al usuario la cantidad vendida
+        const cantidadVendida = parseInt(prompt("Ingrese la cantidad vendida: "));
+
+        // Calcular el total sin descuento
+        let totalSinDescuento = precioProducto * cantidadVendida;
+
+        // Aplicar descuento según la cantidad vendida
+        if (cantidadVendida > 0 && cantidadVendida <= 10) {
+            // No hay descuento
+            alert(`Total a pagar: $${totalSinDescuento.toFixed(2)}`);
+        } else if (cantidadVendida >= 11 && cantidadVendida < 20) {
+            // Aplicar descuento del 2%
+            let descuento = 0.02 * totalSinDescuento;
+            let totalConDescuento = totalSinDescuento - descuento;
+            alert(`Total a pagar con 2% de descuento: $${totalConDescuento.toFixed(2)}`);
+        } else if (cantidadVendida >= 20) {
+            // Aplicar descuento del 4%
+            let descuento = 0.04 * totalSinDescuento;
+            let totalConDescuento = totalSinDescuento - descuento;
+            alert(`Total a pagar con 4% de descuento: $${totalConDescuento.toFixed(2)}`);
+        } else {
+            // Manejar entrada inválida
+            alert("Por favor, ingrese una cantidad válida.");
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

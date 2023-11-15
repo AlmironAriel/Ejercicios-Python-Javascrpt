@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let letra1 = prompt("Ingrese la primera letra: ");
+        let letra2 = prompt("Ingrese la segunda letra: ");
+        let letra3 = prompt("Ingrese la tercera letra: ");
+
+        if (letra1 <= letra2 && letra1 <= letra3) {
+            if (letra2 <= letra3) {
+                alert("Letras en orden ascendente: " + letra1 + " " + letra2 + " " + letra3);
+            } else {
+                alert("Letras en orden ascendente: " + letra1 + " " + letra3 + " " + letra2);
+            }
+        } else if (letra2 <= letra1 && letra2 <= letra3) {
+            if (letra1 <= letra3) {
+                alert("Letras en orden ascendente: " + letra2 + " " + letra1 + " " + letra3);
+            } else {
+                alert("Letras en orden ascendente: " + letra2 + " " + letra3 + " " + letra1);
+            }
+        } else {
+            if (letra1 <= letra2) {
+                alert("Letras en orden ascendente: " + letra3 + " " + letra1 + " " + letra2);
+            } else {
+                alert("Letras en orden ascendente: " + letra3 + " " + letra2 + " " + letra1);
+            }
+        }
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

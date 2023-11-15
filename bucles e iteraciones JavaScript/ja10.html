@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        ///////////////////////////////
+        A = parseInt(prompt("Número para calcular sus divisores: "));
+        B = parseInt(prompt("Número para calcular los que NO son divisores: "));
+        N = parseInt(prompt("Número de iteraciones: "));
+
+        for (let i = 1; i <= N; i++) {
+        let esDivisorDeA = (A % i === 0);
+        if (esDivisorDeA) {
+            alert(`${i} es divisor de ${A}`);
+        }
+        let esDivisorDeB = (B % i === 0);
+        if (!esDivisorDeB) {
+            alert(`${i} NO es divisor de ${B}`);
+        }
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

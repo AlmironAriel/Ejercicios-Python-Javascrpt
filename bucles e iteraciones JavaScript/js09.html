@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // Pedir valores al usuario
+        const A = parseInt(prompt("Ingresa el valor de A: "));
+        const N = parseInt(prompt("Ingresa el valor de N: "));
+
+        for (let i = 1; i <= N; i++){
+            let exponente = i * 2; // Multiplicar por 2 para obtener exponentes pares
+            let resultado = A ** exponente; //también Math.pow(A, exponente)
+            alert(`${A}^${exponente} = ${resultado}`);
+        }
+        alert(`Estas fueron las primeras ${N} potencias de exponente par de ${A}`);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
